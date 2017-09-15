@@ -6,6 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
+import { ItemComponent } from './components/item/item.component';
+
+//RUTAS
+import { app_routing } from "./app.route";
 
 @NgModule({
   declarations: [
@@ -13,10 +17,12 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent,
     FooterComponent,
     PortafolioComponent,
-    AboutComponent
+    AboutComponent,
+    ItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]
