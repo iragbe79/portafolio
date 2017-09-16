@@ -9,7 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ItemComponent } from './components/item/item.component';
 
 //RUTAS
-import { app_routing } from "./app.route";
+import { app_routing } from "./app.routes";
 
 @NgModule({
   declarations: [
