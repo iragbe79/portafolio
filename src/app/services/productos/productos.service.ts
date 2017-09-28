@@ -9,15 +9,16 @@ export class ProductosService {
   loading:boolean = true;
   constructor(private http:Http) {
     this.cargar_Productos();
-
   }
 
   public cargar_Productos(){
     this.loading = true;
     this.http.get('https://myapp-9022e.firebaseio.com/productos_idx.json')
              .subscribe( res => {
-               console.log(res.json());
+               //console.log(res.json());
                this.loading = false;
+               this.productos = res.json();
+               console.log(this.productos);
              });
   }
 }
