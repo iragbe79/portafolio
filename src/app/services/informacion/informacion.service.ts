@@ -17,7 +17,7 @@ export class InformacionService {
   carga_Info(){
     this.http.get("assets/data/info.pagina.json")
              .subscribe( data => {
-               console.log(data.json());
+               //console.log(data.json());
                this.info = data.json();
                this.loadInfo = true;
              });
@@ -26,7 +26,7 @@ export class InformacionService {
   carga_About(){
     this.http.get("https://myapp-9022e.firebaseio.com/equipo.json")
              .subscribe( data => {
-               console.log(data.json());
+               //console.log(data.json());
                this.team = data.json();
                this.loadTeam = true;
              });

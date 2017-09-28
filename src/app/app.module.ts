@@ -13,6 +13,8 @@ import { app_routing } from "./app.routes";
 
 // SERVICIOS
 import { InformacionService } from "./services/informacion/informacion.service";
+import { ProductosService} from "./services/productos/productos.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { InformacionService } from "./services/informacion/informacion.service";
     app_routing
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
