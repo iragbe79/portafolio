@@ -2,14 +2,16 @@ import { RouterModule, Routes } from '@angular/router';
 import {
   AboutComponent,
   ItemComponent,
-  PortafolioComponent
+  PortafolioComponent,
+  SearchComponent
 } from "./components/index.pagingas";
 
 const app_routes: Routes = [
 
   { path: 'home', component: PortafolioComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'item', component: ItemComponent },
+  { path: 'item/:id', component: ItemComponent },
+  { path: 'search/:termino', component: SearchComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
